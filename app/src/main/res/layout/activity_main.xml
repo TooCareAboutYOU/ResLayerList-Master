@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:text="Hello World!"
+        android:background="@drawable/layerlist_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/layerlist_rotate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/acTv_bottom1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp"
+        android:weightSum="3"
+        tools:ignore="MissingConstraints,UselessLeaf">
+        <RadioButton
+            android:id="@+id/rBtn_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="?actionBarSize"
+            android:textColor="@android:color/black"
+            android:background="@drawable/layerlist_tablayout"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:text="TAG1" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/darker_gray"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="?actionBarSize"
+            android:textColor="@android:color/black"
+            android:background="@drawable/layerlist_tablayout"
+            android:checked="false"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:text="TAG2"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/darker_gray"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="?actionBarSize"
+            android:textColor="@android:color/black"
+            android:background="@drawable/layerlist_tablayout"
+            android:checked="false"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="18sp"
+            android:text="TAG3"/>
+    </RadioGroup>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/acTv_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:background="@drawable/layerlist_textview"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/acTv_bottom"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/acTv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:background="@drawable/layerlist_3d"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

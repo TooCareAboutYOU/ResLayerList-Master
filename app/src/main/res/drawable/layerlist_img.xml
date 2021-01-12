@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="UnusedAttribute">
+
+    <!--原文：https://blog.csdn.net/u011822517/article/details/79041940-->
+    <!--PaddingTop：层叠图形距离上个图形上边的距离。-->
+    <!--PaddingLeft：层叠图形距离上个图形左边的距离。-->
+    <!--PaddingBottom：层叠图形距离上个图形下边的距离。-->
+    <!--PaddingRight：层叠图形距离上个图形右边的距离。-->
+    <!--AutoMirrored：设置图片是否需要镜像反转，当布局方向是RTL，即从右到左布局时才有用。-->
+    <!--Opacity：透明性，["translucent " | " opaque "| " transparent "]，分别为半透明、不透明、透明。-->
+    <!--PaddingMode：暂未试出效果，["stack" | " nest "]。-->
+    <!--PaddingStart：层叠图形距离上个图形开始位置的距离。-->
+    <!--PaddingEnd：层叠图形距离上个图形结束位置的距离。-->
+
+
+
+
+    <item android:gravity="center" android:width="200dp" android:height="200dp" android:drawable="@drawable/img_128" />
+    <item android:gravity="left" android:width="50dp" android:height="50dp" android:drawable="@drawable/img_64"/>
+    <item android:gravity="right" android:width="50dp" android:height="50dp" android:drawable="@drawable/img_48"/>
+    <item android:gravity="bottom|right" android:width="50dp" android:height="50dp" android:drawable="@drawable/img_32"/>
+    <item android:gravity="bottom" android:width="50dp" android:height="50dp" android:drawable="@drawable/img_16"/>
+</layer-list>
